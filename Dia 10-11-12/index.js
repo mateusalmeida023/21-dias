@@ -174,4 +174,86 @@ for(i = 0; i < valor.length; i++){
 
 */
 
+////////////////////////////////////////////////// DIA 12 ///////////////////////////////////////////
+
+/*
+let arrayNomes = []
+let arraySenhas = []
+
+let continuar = true;
+let cont = 0;
+
+let nome;
+let senha;
+
+while(continuar){
+    let opcao = prompt("Digite o que você deseja fazer: Cadastrar ( 1 ), Login ( 2 ), Excluir ( 3 ), Encerrar ( 4 )");
+
+    switch(opcao){
+        case "1":
+            arrayNomes[cont] = prompt("Digite o nome de usuário:");
+            arraySenhas[cont] = prompt("Informe a senha a ser cadastrada:");
+            cont++;
+
+            break;
+        case "2":
+            let login;
+            nome = prompt("Digite o nome de usuário:");
+            
+            senha = prompt("Informe a sua senha:");
+
+            for(let i = 0; i < arrayNomes.length; i++){
+                if(nome === arrayNomes[i] && senha === arraySenhas[i]){
+                    login = true;
+                }
+            }
+
+            if(login){
+                console.log("Login feito com sucesso!");
+            }else{
+                console.log("Login ou senha incorretos!");
+            }
+            break;
+
+        case "3":
+            nome = prompt("Digite o nome de usuário que deseja excluir:");
+
+            let contaux = 0;
+            let nomesAux = []
+            let senhasAux = []
+
+            for(i = 0; i < cont; i++){
+                if(nome === arrayNomes[i]){
+                    console.log("Cadastro excluído!");
+                }else{
+                    nomesAux[contaux] = arrayNomes[i];
+                    senhasAux[contaux] = arraySenhas[i];
+                    contaux++;
+                }
+            }
+
+            arrayNomes = nomesAux;
+            arraySenhas = senhasAux;
+            cont--
+
+            break;
+
+        case "4":
+            console.log("Programa encerrado!");
+            continuar = false;
+            break;
+        
+        default:
+            console.log("Opcao inválida, escolha outra!");
+            break;
+    }
+
+}
+
+*/
+
+   
+
+
+
 
